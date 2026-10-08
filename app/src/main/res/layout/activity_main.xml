@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Judul Formulir -->
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title_form"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input Nama Pemesan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pemesan:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama Anda"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Dropdown Varian Mi Ayam -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Varian Mi Ayam:"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spVarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/varian_mi_ayam"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="12dp" />
+
+    <!-- RadioButton Pilihan Porsi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Porsi:"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgPorsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <RadioButton
+            android:id="@+id/rbReguler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reguler"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbJumbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Jumbo" />
+    </RadioGroup>
+
+    <!-- CheckBox Topping Tambahan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topping / Tambahan:"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbPangsit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pangsit Goreng" />
+
+    <CheckBox
+        android:id="@+id/cbBakso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bakso Sapi" />
+
+    <CheckBox
+        android:id="@+id/cbCeker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ceker Ayam" />
+
+    <!-- Tombol Proses -->
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proses Pesanan"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Rekap Pesanan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rekap Pesanan:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <ListView
+        android:id="@+id/lvRekap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

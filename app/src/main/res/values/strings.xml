@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Pemesanan Mi Ayam</string>
+    <string name="title_form">Formulir Pemesanan Mi Ayam</string>
+
+    <!-- Array  miayam -->
+    <string-array name="varian_mi_ayam">
+        <item>Mi Ayam Original</item>
+        <item>Mi Ayam Yamin </item>
+        <item>Mi Ayam Yamin kuah</item>
+        <item>Mi Ayam Rica-Rica </item>
+        <item>Mi Ayam Rica-Rica gkuah</item>
+    </string-array>
+</resources>
